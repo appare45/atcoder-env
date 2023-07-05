@@ -1,0 +1,9 @@
+version: '3'
+services:
+  problem:
+    build: .
+    command: /bin/sh 
+    volumes:
+      - type: bind
+        source: problems
+        target: /problems

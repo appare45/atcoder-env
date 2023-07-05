@@ -1,0 +1,11 @@
+.global main
+main:
+  MOV r0, #0 ; ループの初期値
+  MOV r1, #300; ループの終了
+  MOV r2, #0;	合計値
+loop:
+	ADD r2, r2, r0; 合計値に現在の値を追加
+	ADD r0, r0, #1;	現在の値を計算
+	CMP r2, r0;	合計値と比較する
+	BNE loop
+	BX lr

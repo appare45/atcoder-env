@@ -1,0 +1,10 @@
+{
+  "task": {
+    "program": ["main.cpp"],
+    "static": ["Makefile"],
+    "submit": "main.cpp"
+  },
+  "contest": {
+    "cmd": "make clean"
+  }
+}
