@@ -8,8 +8,9 @@ RUN apt-get install -y g++ \
                     python3-pip\
                     build-essential\
                     make\
-                    npm
-RUN pip3 install --break-system-packages online-judge-tools  
+                    npm\
+                    gdb
+  RUN pip3 install --break-system-packages online-judge-tools  
 RUN npm install -g atcoder-cli
 COPY templates/cpp /root/.config/atcoder-cli-nodejs/cpp
 RUN acc config default-template cpp

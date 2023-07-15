@@ -3,6 +3,7 @@ services:
   problem:
     build: .
     command: /bin/sh 
+    tty: true
     volumes:
       - type: bind
         source: problems
